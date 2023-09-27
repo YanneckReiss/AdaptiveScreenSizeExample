@@ -48,10 +48,10 @@ The interesting parts can found in the `NotesTab.kt` file as well as in `NotesAp
 
 ### Libraries used
 
-* Compose Destinations for navigation
-* Accompanist Adaptive for adaptive screen size support
-* Koin for dependency injection
-* Various other AndroidX and Jetpack libraries
+* [Compose Destinations](https://github.com/raamcosta/compose-destinations) for navigation
+* [Accompanist Adaptive](https://google.github.io/accompanist/adaptive/) for adaptive screen size support
+* [Koin](https://insert-koin.io/) with [Koin Annotations](https://insert-koin.io/docs/setup/annotations/) for dependency injection
+* Various other [AndroidX](https://developer.android.com/jetpack/androidx) and [Jetpack](https://developer.android.com/jetpack) libraries
 
 ## Recommended reading
 
