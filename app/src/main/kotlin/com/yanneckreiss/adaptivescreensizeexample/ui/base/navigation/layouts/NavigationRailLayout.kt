@@ -47,8 +47,6 @@ private fun AppNavigationRail(
 
     val currentDestination: DestinationSpec<*>? by navController.currentDestinationAsState()
 
-    println("----> Navrail currentDestination: $currentDestination")
-
     NavigationRail(
         modifier = modifier.fillMaxHeight(),
         header = {

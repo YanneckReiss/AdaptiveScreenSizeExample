@@ -30,7 +30,6 @@ class NotesRepository(
     }
 
     fun watchNotes(): Flow<List<Note>> = _mockedNotes.map { notes ->
-        println("----> Mapping list!")
         notes.map { noteEntity -> noteEntity.toDomainModel() }
     }
 

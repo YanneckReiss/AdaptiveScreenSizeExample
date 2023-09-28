@@ -12,7 +12,6 @@ class WatchSortedNotesUseCase(
 ) {
 
     fun call(): Flow<List<Note>> = notesRepository.watchNotes().map { notes ->
-        println("----> Sorting list!")
         notes.sortedByDescending { note -> note.dateOfCreation }
     }
 }

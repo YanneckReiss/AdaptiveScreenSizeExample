@@ -19,10 +19,6 @@ class NoteDetailsViewModel(
     watchNotesUseCase: WatchNoteUseCase,
 ) : ViewModel() {
 
-    init {
-        println("----> NoteDetailsViewModel init: $notesUid")
-    }
-
     private val _state = MutableStateFlow(NoteDetailsState())
     val state: StateFlow<NoteDetailsState> = when {
         notesUid != null -> {

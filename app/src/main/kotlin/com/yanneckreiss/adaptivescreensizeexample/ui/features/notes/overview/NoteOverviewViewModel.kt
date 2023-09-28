@@ -18,7 +18,6 @@ class NoteOverviewViewModel(
 
     private val _state = MutableStateFlow(NotesOverviewState())
     val state: StateFlow<NotesOverviewState> = _state.combine(watchSortedNotesUseCase.call()) { state, notes ->
-        println("----> Updated list received!, itemCount: ${notes.size}")
         state.copy(notes = notes.toImmutableList())
     }.stateIn(
         viewModelScope,
